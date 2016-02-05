@@ -48,13 +48,10 @@ Comments:
   DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
   (Uncomment and declare inputs and outputs as needed)
 *******************************************************************************************/
-<<<<<<< HEAD
 DIGITAL_INPUT 
 		button_1,
 		button_2;
-=======
 DIGITAL_INPUT stupid;
->>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
 // ANALOG_INPUT 
 // STRING_INPUT 
 // BUFFER_INPUT 

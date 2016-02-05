@@ -15,37 +15,11 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
     {
         static CCriticalSection g_criticalSection = new CCriticalSection();
         
-<<<<<<< HEAD
         Crestron.Logos.SplusObjects.DigitalInput BUTTON_1;
         Crestron.Logos.SplusObjects.DigitalInput BUTTON_2;
+        Crestron.Logos.SplusObjects.DigitalInput STUPID;
         Crestron.Logos.SplusObjects.DigitalOutput BTNFB1;
         Crestron.Logos.SplusObjects.DigitalOutput BTNFB2;
-        
-        public override void LogosSplusInitialize()
-        {
-            SocketInfo __socketinfo__ = new SocketInfo( 1, this );
-            InitialParametersClass.ResolveHostName = __socketinfo__.ResolveHostName;
-            _SplusNVRAM = new SplusNVRAM( this );
-            
-            BUTTON_1 = new Crestron.Logos.SplusObjects.DigitalInput( BUTTON_1__DigitalInput__, this );
-            m_DigitalInputList.Add( BUTTON_1__DigitalInput__, BUTTON_1 );
-            
-            BUTTON_2 = new Crestron.Logos.SplusObjects.DigitalInput( BUTTON_2__DigitalInput__, this );
-            m_DigitalInputList.Add( BUTTON_2__DigitalInput__, BUTTON_2 );
-            
-            BTNFB1 = new Crestron.Logos.SplusObjects.DigitalOutput( BTNFB1__DigitalOutput__, this );
-            m_DigitalOutputList.Add( BTNFB1__DigitalOutput__, BTNFB1 );
-            
-            BTNFB2 = new Crestron.Logos.SplusObjects.DigitalOutput( BTNFB2__DigitalOutput__, this );
-            m_DigitalOutputList.Add( BTNFB2__DigitalOutput__, BTNFB2 );
-            
-            
-            
-            _SplusNVRAM.PopulateCustomAttributeList( true );
-            
-            NVRAM = _SplusNVRAM;
-=======
-        Crestron.Logos.SplusObjects.DigitalInput STUPID;
         MYSTRUCT1 STRUCT;
         object STUPID_OnPush_0 ( Object __EventInfo__ )
         
@@ -61,7 +35,6 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
             catch(Exception e) { ObjectCatchHandler(e); }
             finally { ObjectFinallyHandler( __SignalEventArg__ ); }
             return this;
->>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
             
         }
         
@@ -74,22 +47,27 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
         STRUCT  = new MYSTRUCT1( this, true );
         STRUCT .PopulateCustomAttributeList( false );
         
+        BUTTON_1 = new Crestron.Logos.SplusObjects.DigitalInput( BUTTON_1__DigitalInput__, this );
+        m_DigitalInputList.Add( BUTTON_1__DigitalInput__, BUTTON_1 );
+        
+        BUTTON_2 = new Crestron.Logos.SplusObjects.DigitalInput( BUTTON_2__DigitalInput__, this );
+        m_DigitalInputList.Add( BUTTON_2__DigitalInput__, BUTTON_2 );
+        
         STUPID = new Crestron.Logos.SplusObjects.DigitalInput( STUPID__DigitalInput__, this );
         m_DigitalInputList.Add( STUPID__DigitalInput__, STUPID );
+        
+        BTNFB1 = new Crestron.Logos.SplusObjects.DigitalOutput( BTNFB1__DigitalOutput__, this );
+        m_DigitalOutputList.Add( BTNFB1__DigitalOutput__, BTNFB1 );
+        
+        BTNFB2 = new Crestron.Logos.SplusObjects.DigitalOutput( BTNFB2__DigitalOutput__, this );
+        m_DigitalOutputList.Add( BTNFB2__DigitalOutput__, BTNFB2 );
         
         
         STUPID.OnDigitalPush.Add( new InputChangeHandlerWrapper( STUPID_OnPush_0, false ) );
         
         _SplusNVRAM.PopulateCustomAttributeList( true );
         
-<<<<<<< HEAD
-        const uint BUTTON_1__DigitalInput__ = 0;
-        const uint BUTTON_2__DigitalInput__ = 1;
-        const uint BTNFB1__DigitalOutput__ = 0;
-        const uint BTNFB2__DigitalOutput__ = 1;
-=======
         NVRAM = _SplusNVRAM;
->>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
         
     }
     
@@ -104,7 +82,11 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
     
     
     
-    const uint STUPID__DigitalInput__ = 0;
+    const uint BUTTON_1__DigitalInput__ = 0;
+    const uint BUTTON_2__DigitalInput__ = 1;
+    const uint STUPID__DigitalInput__ = 2;
+    const uint BTNFB1__DigitalOutput__ = 0;
+    const uint BTNFB2__DigitalOutput__ = 1;
     
     [SplusStructAttribute(-1, true, false)]
     public class SplusNVRAM : SplusStructureBase

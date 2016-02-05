@@ -1959,7 +1959,7 @@ Xm=-1
 Ym=-1
 SH=31
 Z=100
-Ht=1
+Ht=3
 Hi=1
 ]
 [
@@ -2045,7 +2045,7 @@ H=4
 SmC=156
 Nm=Logic
 ObjVer=1
-CF=2
+CF=1
 mC=1
 C1=30
 ]
@@ -2467,7 +2467,7 @@ SmC=156
 Nm=SUBSYSTEM
 ObjVer=1
 PrH=4
-CF=2
+CF=1
 Cmn1=stuff folder\\
 mC=1
 C1=31
@@ -2479,16 +2479,21 @@ SmC=103
 Nm=example splus mod.usp
 ObjVer=1
 PrH=30
-CF=2
 <<<<<<< HEAD
-mP=1
-P1=
+CF=1
+n1I=2
+n1O=2
+mI=2
+mO=2
+tO=2
 =======
+CF=2
 n1I=1
 mI=1
 I1=5
+>>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
 mP=1
-P1=
+P1=asdfasdf
 ]
 [
 ObjTp=Sg
@@ -2544,5 +2549,4 @@ Nm=btn_6
 ObjTp=Sg
 H=14
 Nm=btn_7
->>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
 ]
