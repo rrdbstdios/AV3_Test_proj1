@@ -18,13 +18,13 @@ S0Nd=1
 S1Nd=2
 SLNd=3
 PrNm=test program.smw
-DbVr=53.05.005.00
-DvcDbVr=70.05.003.00
+DbVr=54.00.012.00
+DvcDbVr=71.05.004.00
 PgmNm=Paul Lipp
 DlrNm=AV3 Inc
 CltNm=av3 test
-SmVr=975
-DvVr=975
+SmVr=981
+DvVr=981
 TpN1=1
 TpN2=2
 TpN3=3
@@ -1938,29 +1938,14 @@ ObjTp=Bw
 H=1
 Lx=0
 Ly=0
-Rx=1237
-Ry=456
+Rx=698
+Ry=793
 Xm=-1
 Ym=-1
-SH=31
+SH=32
 Z=100
 Ht=3
 Hi=1
-]
-[
-ObjTp=Bw
-H=1
-Lx=0
-Ly=456
-Rx=1237
-Ry=912
-Xm=-1
-Ym=-1
-SH=22
-Z=100
-P=457
-Ht=4
-Hi=20
 ]
 [
 ObjTp=Et
@@ -2046,8 +2031,9 @@ SmC=156
 Nm=Logic
 ObjVer=1
 CF=2
-mC=1
-C1=30
+mC=2
+C1=32
+C2=30
 ]
 [
 ObjTp=Sm
@@ -2492,6 +2478,18 @@ O1=15
 O2=15
 mP=1
 P1=asdfasdf
+]
+[
+ObjTp=Sm
+H=32
+SmC=121
+Nm=Comment
+ObjVer=1
+PrH=4
+CF=2
+Cmn1=tim sucks\\
+mP=1
+P1=tim sucks
 ]
 [
 ObjTp=Sg

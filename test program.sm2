@@ -18,13 +18,13 @@ S0Nd=1
 S1Nd=2
 SLNd=3
 PrNm=test program.smw
-DbVr=53.05.005.00
-DvcDbVr=70.05.003.00
+DbVr=54.00.012.00
+DvcDbVr=71.05.004.00
 PgmNm=Paul Lipp
 DlrNm=AV3 Inc
 CltNm=av3 test
-SmVr=975
-DvVr=975
+SmVr=981
+DvVr=981
 TpN1=1
 TpN2=2
 TpN3=3
@@ -1934,35 +1934,6 @@ Sy1=0
 Mx1=0
 ]
 [
-ObjTp=Bw
-H=1
-Lx=0
-Ly=456
-Rx=1237
-Ry=912
-Xm=-1
-Ym=-1
-SH=22
-Z=100
-P=457
-Ht=4
-Hi=20
-]
-[
-ObjTp=Bw
-H=1
-Lx=0
-Ly=0
-Rx=1237
-Ry=456
-Xm=-1
-Ym=-1
-SH=31
-Z=100
-Ht=3
-Hi=1
-]
-[
 ObjTp=Et
 H=1
 DvH=700
@@ -2046,8 +2017,9 @@ SmC=156
 Nm=Logic
 ObjVer=1
 CF=1
-mC=1
-C1=30
+mC=2
+C1=32
+C2=30
 ]
 [
 ObjTp=Sm
@@ -2467,7 +2439,7 @@ SmC=156
 Nm=SUBSYSTEM
 ObjVer=1
 PrH=4
-CF=1
+CF=2
 Cmn1=stuff folder\\
 mC=1
 C1=31
@@ -2479,21 +2451,31 @@ SmC=103
 Nm=example splus mod.usp
 ObjVer=1
 PrH=30
-<<<<<<< HEAD
-CF=1
-n1I=2
+CF=2
+n1I=3
 n1O=2
-mI=2
+mI=3
+I1=5
+I2=15
+I3=15
 mO=2
 tO=2
-=======
-CF=2
-n1I=1
-mI=1
-I1=5
->>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
+O1=15
+O2=15
 mP=1
 P1=asdfasdf
+]
+[
+ObjTp=Sm
+H=32
+SmC=121
+Nm=Comment
+ObjVer=1
+PrH=4
+CF=1
+Cmn1=tim sucks\\
+mP=1
+P1=
 ]
 [
 ObjTp=Sg
@@ -2549,4 +2531,9 @@ Nm=btn_6
 ObjTp=Sg
 H=14
 Nm=btn_7
+]
+[
+ObjTp=Sg
+H=15
+Nm=//__digital_reserved__
 ]
