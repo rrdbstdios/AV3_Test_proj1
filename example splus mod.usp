@@ -19,7 +19,7 @@ Comments:
 // #HINT ""
 // #DEFINE_CONSTANT
 // #CATEGORY "" 
-// #PRINT_TO_TRACE
+#PRINT_TO_TRACE
 // #DIGITAL_EXPAND 
 // #ANALOG_SERIAL_EXPAND 
 // #OUTPUT_SHIFT 
@@ -48,9 +48,13 @@ Comments:
   DIGITAL, ANALOG and SERIAL INPUTS and OUTPUTS
   (Uncomment and declare inputs and outputs as needed)
 *******************************************************************************************/
+<<<<<<< HEAD
 DIGITAL_INPUT 
 		button_1,
 		button_2;
+=======
+DIGITAL_INPUT stupid;
+>>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
 // ANALOG_INPUT 
 // STRING_INPUT 
 // BUFFER_INPUT 
@@ -102,13 +106,13 @@ DIGITAL_OUTPUT
   Note:  Be sure to initialize all declared STRING variables as needed
          For example, in Function Main: struct.myString = "";
 *******************************************************************************************/
-/*
+
 STRUCTURE MyStruct1
 {
 };
 
 MyStruct1 struct;
-*/
+
 
 /*******************************************************************************************
   Global Variables
@@ -163,12 +167,12 @@ String_Function MyStrFunction1()
   Event Handlers
   (Uncomment and declare additional event handlers as needed)
 *******************************************************************************************/
-/*
-PUSH input
+
+PUSH stupid
 {
     // TODO:  Add code here
 }
-*/
+
 
 /*
 RELEASE input

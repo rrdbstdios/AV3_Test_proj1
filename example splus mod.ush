@@ -22,6 +22,7 @@
   Code=1
   SysRev5=3.083
   SMWRev=2.02.05
+<<<<<<< HEAD
   InputCue1=button_1
   InputSigType1=Digital
   InputCue2=button_2
@@ -33,6 +34,13 @@
   ParamCue1=[Reference Name]
   MinVariableInputs=2
   MaxVariableInputs=2
+=======
+  InputCue1=stupid
+  InputSigType1=Digital
+  ParamCue1=[Reference Name]
+  MinVariableInputs=1
+  MaxVariableInputs=1
+>>>>>>> 4257125f3b63fd47cf698a59e5dd75cb58e3ab89
   MinVariableInputsList2=0
   MaxVariableInputsList2=0
   MinVariableOutputs=2
