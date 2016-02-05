@@ -98,13 +98,13 @@ DIGITAL_INPUT stupid;
   Note:  Be sure to initialize all declared STRING variables as needed
          For example, in Function Main: struct.myString = "";
 *******************************************************************************************/
-/*
+
 STRUCTURE MyStruct1
 {
 };
 
 MyStruct1 struct;
-*/
+
 
 /*******************************************************************************************
   Global Variables

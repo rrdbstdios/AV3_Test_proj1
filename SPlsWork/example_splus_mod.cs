@@ -16,6 +16,7 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
         static CCriticalSection g_criticalSection = new CCriticalSection();
         
         Crestron.Logos.SplusObjects.DigitalInput STUPID;
+        MYSTRUCT1 STRUCT;
         object STUPID_OnPush_0 ( Object __EventInfo__ )
         
             { 
@@ -39,6 +40,8 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
         SocketInfo __socketinfo__ = new SocketInfo( 1, this );
         InitialParametersClass.ResolveHostName = __socketinfo__.ResolveHostName;
         _SplusNVRAM = new SplusNVRAM( this );
+        STRUCT  = new MYSTRUCT1( this, true );
+        STRUCT .PopulateCustomAttributeList( false );
         
         STUPID = new Crestron.Logos.SplusObjects.DigitalInput( STUPID__DigitalInput__, this );
         m_DigitalInputList.Add( STUPID__DigitalInput__, STUPID );
@@ -94,5 +97,17 @@ namespace UserModule_EXAMPLE_SPLUS_MOD
      public int IsNull( object obj ){ return (obj == null) ? 1 : 0; }
 }
 
+[SplusStructAttribute(-1, true, false)]
+public class MYSTRUCT1 : SplusStructureBase
+{
+
+    
+    public MYSTRUCT1( SplusObject __caller__, bool bIsStructureVolatile ) : base ( __caller__, bIsStructureVolatile )
+    {
+        
+        
+    }
+    
+}
 
 }
