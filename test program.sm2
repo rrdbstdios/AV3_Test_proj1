@@ -1934,6 +1934,20 @@ Sy1=0
 Mx1=0
 ]
 [
+ObjTp=Bw
+H=1
+Lx=0
+Ly=0
+Rx=698
+Ry=793
+Xm=-1
+Ym=-1
+SH=32
+Z=100
+Ht=3
+Hi=1
+]
+[
 ObjTp=Et
 H=1
 DvH=700
@@ -2016,7 +2030,7 @@ H=4
 SmC=156
 Nm=Logic
 ObjVer=1
-CF=1
+CF=2
 mC=2
 C1=32
 C2=30
@@ -2472,10 +2486,10 @@ SmC=121
 Nm=Comment
 ObjVer=1
 PrH=4
-CF=1
+CF=2
 Cmn1=tim sucks\\
 mP=1
-P1=
+P1=tim sucks
 ]
 [
 ObjTp=Sg
